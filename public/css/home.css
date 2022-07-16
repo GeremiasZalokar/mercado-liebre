@@ -1,0 +1,44 @@
+/* HEADER*/
+body{
+    background-color: aqua;
+}
+.body__header{
+    background-color: var(--amarillo);
+    width: 100%;
+}
+.header_logo img{
+    margin-left: 20px;
+    width: 20%;
+}
+.header form{
+    margin-left: 20px;
+}
+.header h2{
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.header__bar{
+    background-color: blue;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* MAIN */
+.main__section--titulares{
+    font-size: 24px;
+
+}
+.main__section-precio{
+    font-size: 18px;
+}
+.main__section--infoProduct{
+    font-size: 16px;
+}
+.main__section-product{
+    width: 100%;
+}
+/* FOOTER */
