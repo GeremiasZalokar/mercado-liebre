@@ -1,6 +1,6 @@
 /* HEADER*/
 body{
-    background-color: aqua;
+    background-color: var(--grisClaro);
 }
 .body__header{
     background-color: var(--amarillo);
@@ -17,28 +17,95 @@ body{
     font-weight: 400;
     text-align: center;
 }
-
-
+.header__title{
+    text-align: center;
+}
 .header__bar{
     background-color: blue;
     width: 10%;
     display: flex;
     justify-content: center;
     border-radius: 5px;
+    margin: auto;
+}
+.header__nav--section{
+    display: none;
 }
 
 /* MAIN */
+.home__main{
+    width: 90%;
+    text-align: center;
+}
+.article__main{
+    width: 100%;
+}
+.main__section-product img{
+    text-align: center;
+    width: 90%;
+}
 .main__section--titulares{
     font-size: 24px;
 
 }
 .main__section-precio{
+    margin-left: 10px;
     font-size: 18px;
+}
+.main__section-desc{
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: white;
 }
 .main__section--infoProduct{
     font-size: 16px;
+    border-top: 1px solid #ebebeb ;
+    margin: 0 15px 15px 15px;
+    background-color: white;
+    text-align: start;
+}
+.truck{
+    width: 15%;
+    border: solid 1px green;  
+    border-radius: 50%;
+    padding: 15px; 
+}
+.truck i{
+    color: green;
+    text-align: center;
+}
+.home__main--banner img{
+    width: 100%;
 }
 .main__section-product{
     width: 100%;
 }
 /* FOOTER */
+.body__footer{
+    text-align: center;
+    margin: 60px 10px 20px 10px;
+    background-color: white;
+}
+.body__footer ul li i {
+    font-size: 30px;
+    margin-top: 30px;
+    color: blue;
+}
+.body__copyright{
+    font-size: 10px;
+    margin-top: 25px;
+    color: var(--grisOscuro);
+    text-align: start;
+} 
+/* ======================= MEDIA QUERY || TABLET =======================*/
+@media (min-width:768px) {
+.header__nav--section{
+    display: inline;
+}
+box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+/* ======================= MEDIA QUERY || DESKTOP =======================*/
+
+@media (min-width: 1024px){
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
