@@ -5,6 +5,9 @@ body{
 .body__header{
     background-color: var(--amarillo);
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .header_logo img{
     margin-left: 20px;
@@ -23,8 +26,7 @@ body{
 .header__bar{
     background-color: blue;
     width: 10%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     border-radius: 5px;
     margin: auto;
 }
@@ -51,28 +53,44 @@ body{
 .main__section-precio{
     margin-left: 10px;
     font-size: 18px;
+    
+    display: inline-block;
+    
 }
 .main__section-desc{
     margin-left: 10px;
     font-size: 16px;
     background-color: white;
+    display: inline-block;
 }
 .main__section--infoProduct{
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     border-top: 1px solid #ebebeb ;
     margin: 0 15px 15px 15px;
     background-color: white;
     text-align: start;
+    flex-wrap: wrap;
 }
+
 .truck{
-    width: 15%;
-    border: solid 1px green;  
-    border-radius: 50%;
-    padding: 15px; 
+    display: flex;
+    position: relative;
+    
 }
 .truck i{
-    color: green;
-    text-align: center;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 .home__main--banner img{
     width: 100%;
@@ -107,5 +125,5 @@ box-shadow: 0px 0px 10px rgb(100, 100, 100);
 /* ======================= MEDIA QUERY || DESKTOP =======================*/
 
 @media (min-width: 1024px){
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
