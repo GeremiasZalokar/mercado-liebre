@@ -12,3 +12,6 @@
     box-sizing: border-box;
     font-family: 'Roboto';
 }
+ul{
+    list-style: none;
+}
